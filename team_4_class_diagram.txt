@@ -37,9 +37,18 @@ classDiagram
     }
     
     class Config {
+        -_config
+        -_init_config(path) void
+        -_get_default_path() string
         +get_parameter(parameter_name, default) any
         +set_parameter(name, value) void
         +overwrite_from_args(args) void
+        +convert_to_typed_value(value) any
+    }
+    
+    class ExampleAnalysis {
+        -string USER
+        +run() void
     }
     
     class LabelAnalysis {
@@ -56,6 +65,8 @@ classDiagram
         -analyze_contributor_activity() DataFrame
         -plot_top_contributors() void
         -plot_contributor_label_distribution() void
+        -_analyze_specific_contributor() void
+        -_analyze_all_contributors() void
     }
     
     class TimelineAnalysis {
@@ -65,12 +76,14 @@ classDiagram
         -plot_issue_resolution_over_time() void
     }
     
-    DataLoader --> Issue : creates
-    Issue --> Event : contains
-    Issue --> State : has
-    LabelAnalysis --> DataLoader : uses
-    ContributorAnalysis --> DataLoader : uses
-    TimelineAnalysis --> DataLoader : uses
-    LabelAnalysis --> Config : uses
-    ContributorAnalysis --> Config : uses
-    TimelineAnalysis --> Config : uses
+    DataLoader "1" o-- "*" Issue : creates
+    Issue "1" o-- "*" Event : contains
+    Issue "1" o-- "1" State : has
+    ExampleAnalysis "1" o-- "1" DataLoader : uses
+    ExampleAnalysis "1" o-- "1" Config : uses
+    LabelAnalysis "1" o-- "1" DataLoader : uses
+    ContributorAnalysis "1" o-- "1" DataLoader : uses
+    TimelineAnalysis "1" o-- "1" DataLoader : uses
+    LabelAnalysis "1" o-- "1" Config : uses
+    ContributorAnalysis "1" o-- "1" Config : uses
+    TimelineAnalysis "1" o-- "1" Config : uses

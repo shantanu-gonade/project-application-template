@@ -8,13 +8,16 @@ erDiagram
     Issue {
         string url
         string creator
-        string state
+        List~string~ labels
+        State state
+        List~string~ assignees
         string title
         string text
         int number
         datetime created_date
         datetime updated_date
         string timeline_url
+        List~Event~ events
     }
     
     User {
