@@ -90,12 +90,28 @@ class TimelineAnalysis:
         time_to_resolution = []
         
         for issue in issues:
-            if issue.first_response_at and issue.closed_at:
-                first_response_time = datetime.strptime(issue.first_response_at, '%Y-%m-%dT%H:%M:%SZ')
-                resolution_time = datetime.strptime(issue.closed_at, '%Y-%m-%dT%H:%M:%SZ')
+            # Find the closure event and extract the closure date
+            closing_event = next((event for event in issue.events if event.event_type == 'closed'), None)
+            if closing_event:
+                closure_time = closing_event.event_date  # Assuming event_date is already a datetime object
                 
-                time_to_first_response.append((first_response_time - datetime.strptime(issue.created_date, '%Y-%m-%dT%H:%M:%SZ')).total_seconds())
-                time_to_resolution.append((resolution_time - datetime.strptime(issue.created_date, '%Y-%m-%dT%H:%M:%SZ')).total_seconds())
+                # Find the first comment event (this can be your first response)
+                first_response_time = None
+                for event in issue.events:
+                    if event.event_type == 'commented' and not first_response_time:
+                        first_response_time = event.event_date  # Assuming event_date is already a datetime object
+                        break  # We only need the first comment as the first response
+                
+                # If we found the first response time, calculate the time to first response and resolution time
+                if first_response_time:
+                    # Check if created_date is a string or datetime and handle accordingly
+                    if isinstance(issue.created_date, str):
+                        created_time = datetime.strptime(issue.created_date, '%Y-%m-%dT%H:%M:%SZ')  # Convert from string
+                    else:
+                        created_time = issue.created_date  # If it's already a datetime object, use it directly
+                    
+                    time_to_first_response.append((first_response_time - created_time).total_seconds())
+                    time_to_resolution.append((closure_time - created_time).total_seconds())
         
         # Plot time to first response
         plt.figure(figsize=(10, 6))
@@ -117,8 +133,8 @@ class TimelineAnalysis:
         
         for issue in issues:
             for event in issue.events:
-                # Ensure event.created_date is properly parsed if it is a string
-                event_date = datetime.strptime(event.created_date, '%Y-%m-%dT%H:%M:%SZ') if isinstance(event.created_date, str) else event.created_date
+                # Use event_date instead of created_date
+                event_date = event.event_date if isinstance(event.event_date, datetime) else datetime.strptime(event.event_date, '%Y-%m-%dT%H:%M:%SZ')
                 events_by_date[event_date.date()] += 1
         
         # Convert to pandas DataFrame for easier plotting
