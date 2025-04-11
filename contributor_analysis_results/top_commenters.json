@@ -1,0 +1,80 @@
+{
+  "top_commenters": [
+    {
+      "name": "github-actions[bot]",
+      "count": 5547,
+      "avg_comment_length": 0
+    },
+    {
+      "name": "dimbleby",
+      "count": 3317,
+      "avg_comment_length": 0
+    },
+    {
+      "name": "finswimmer",
+      "count": 1663,
+      "avg_comment_length": 0
+    },
+    {
+      "name": "abn",
+      "count": 1393,
+      "avg_comment_length": 0
+    },
+    {
+      "name": "neersighted",
+      "count": 1354,
+      "avg_comment_length": 0
+    },
+    {
+      "name": "sdispater",
+      "count": 973,
+      "avg_comment_length": 0
+    },
+    {
+      "name": "sinoroc",
+      "count": 549,
+      "avg_comment_length": 0
+    },
+    {
+      "name": "Secrus",
+      "count": 544,
+      "avg_comment_length": 0
+    },
+    {
+      "name": "radoering",
+      "count": 509,
+      "avg_comment_length": 0
+    },
+    {
+      "name": "stale[bot]",
+      "count": 484,
+      "avg_comment_length": 0
+    },
+    {
+      "name": "ghost",
+      "count": 160,
+      "avg_comment_length": 0
+    },
+    {
+      "name": "clintonroy",
+      "count": 148,
+      "avg_comment_length": 0
+    },
+    {
+      "name": "mkniewallner",
+      "count": 130,
+      "avg_comment_length": 0
+    },
+    {
+      "name": "jacebrowning",
+      "count": 116,
+      "avg_comment_length": 0
+    },
+    {
+      "name": "cauebs",
+      "count": 106,
+      "avg_comment_length": 0
+    }
+  ],
+  "total_comments": 37687
+}
