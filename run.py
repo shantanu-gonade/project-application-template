@@ -12,6 +12,9 @@ from example_analysis import ExampleAnalysis
 from label_analysis import LabelAnalysis
 from contributor_analysis import ContributorAnalysis
 from timeline_analysis import TimelineAnalysis
+from issue_network_analysis import IssueNetworkAnalysis
+from issue_complexity_analysis import IssueComplexityAnalysis
+from issue_resolution_prediction import IssueResolutionPrediction
 
 
 def parse_args():
@@ -56,5 +59,11 @@ elif args.feature == 2:
     ContributorAnalysis().run()
 elif args.feature == 3:
     TimelineAnalysis().run()
+elif args.feature == 4:
+    IssueNetworkAnalysis().run()
+elif args.feature == 5:
+    IssueComplexityAnalysis().run()
+elif args.feature == 6:
+    IssueResolutionPrediction().run()
 else:
     print('Need to specify which feature to run with --feature flag.')
