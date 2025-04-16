@@ -1,0 +1,34 @@
+name: Generate Visualizations
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "*.py"
+      - "requirements.txt"
+
+jobs:
+  visualize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Generate visualizations
+        run: |
+          python run.py --feature 1
+          python run.py --feature 2
+          python run.py --feature 3
+      - name: Upload visualization artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: visualizations
+          path: |
+            Timeline Analysis/*.png
+            contributor_analysis_results/images/*.png
