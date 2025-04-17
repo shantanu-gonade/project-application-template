@@ -4,7 +4,7 @@ This application analyzes GitHub issues from the [poetry](https://github.com/pyt
 
 ## Features
 
-The application implements several different analyses:
+The application implements several different analyses :
 
 1. **Label Analysis** (Feature 1): Analyzes issues based on labels
 
