@@ -1,0 +1,26 @@
+{
+  "label_distribution": {
+    "kind/feature": 3,
+    "status/triage": 5,
+    "area/repo": 20,
+    "area/auth": 1,
+    "kind/bug": 15,
+    "status/waiting-on-response": 1,
+    "status/needs-reproduction": 1,
+    "area/ux": 1
+  },
+  "label_activity": {
+    "kind/feature": 3.3333333333333335,
+    "status/triage": 10.8,
+    "area/repo": 9.15,
+    "area/auth": 2.0,
+    "kind/bug": 10.933333333333334,
+    "status/waiting-on-response": 3.0,
+    "status/needs-reproduction": 4.0,
+    "area/ux": 4.0
+  },
+  "label_resolution_times": {
+    "kind/bug": 380.89892526455026,
+    "area/repo": 334.7801232298475
+  }
+}

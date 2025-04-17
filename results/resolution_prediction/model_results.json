@@ -1,0 +1,90 @@
+{
+  "success": true,
+  "accuracy": 0.6792899408284023,
+  "classification_report": {
+    "Slow Resolution": {
+      "precision": 0.6801242236024845,
+      "recall": 0.7382022471910112,
+      "f1-score": 0.7079741379310345,
+      "support": 890.0
+    },
+    "Quick Resolution": {
+      "precision": 0.6781767955801105,
+      "recall": 0.61375,
+      "f1-score": 0.6443569553805775,
+      "support": 800.0
+    },
+    "accuracy": 0.6792899408284023,
+    "macro avg": {
+      "precision": 0.6791505095912975,
+      "recall": 0.6759761235955056,
+      "f1-score": 0.676165546655806,
+      "support": 1690.0
+    },
+    "weighted avg": {
+      "precision": 0.6792023641836092,
+      "recall": 0.6792899408284023,
+      "f1-score": 0.6778594953035991,
+      "support": 1690.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      657,
+      233
+    ],
+    [
+      309,
+      491
+    ]
+  ],
+  "feature_importance": {
+    "title_length": 0.2635987357334791,
+    "description_length": 0.31829770848467787,
+    "label_count": 0.059386898731236155,
+    "has_bug_label": 0.018614528960897006,
+    "has_feature_label": 0.014372635104705106,
+    "has_enhancement_label": 0.0019523089602110901,
+    "comment_count": 0.12863310011155846,
+    "participant_count": 0.17585176122710003,
+    "has_code": 0.01929232268613518
+  },
+  "sorted_importance": [
+    [
+      "description_length",
+      0.31829770848467787
+    ],
+    [
+      "title_length",
+      0.2635987357334791
+    ],
+    [
+      "participant_count",
+      0.17585176122710003
+    ],
+    [
+      "comment_count",
+      0.12863310011155846
+    ],
+    [
+      "label_count",
+      0.059386898731236155
+    ],
+    [
+      "has_code",
+      0.01929232268613518
+    ],
+    [
+      "has_bug_label",
+      0.018614528960897006
+    ],
+    [
+      "has_feature_label",
+      0.014372635104705106
+    ],
+    [
+      "has_enhancement_label",
+      0.0019523089602110901
+    ]
+  ]
+}

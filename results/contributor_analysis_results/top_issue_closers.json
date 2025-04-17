@@ -1,0 +1,80 @@
+{
+  "top_closers": [
+    {
+      "name": "finswimmer",
+      "count": 1162,
+      "avg_hours_to_close": 25979.91287554982
+    },
+    {
+      "name": "neersighted",
+      "count": 787,
+      "avg_hours_to_close": 18981.525806861497
+    },
+    {
+      "name": "abn",
+      "count": 530,
+      "avg_hours_to_close": 21543.131523060798
+    },
+    {
+      "name": "sdispater",
+      "count": 528,
+      "avg_hours_to_close": 44251.958748947814
+    },
+    {
+      "name": "radoering",
+      "count": 420,
+      "avg_hours_to_close": 10745.621136904763
+    },
+    {
+      "name": "Secrus",
+      "count": 396,
+      "avg_hours_to_close": 13604.612196268235
+    },
+    {
+      "name": "stale[bot]",
+      "count": 173,
+      "avg_hours_to_close": 44027.83414739884
+    },
+    {
+      "name": "mkniewallner",
+      "count": 84,
+      "avg_hours_to_close": 25294.124980158726
+    },
+    {
+      "name": "kasteph",
+      "count": 60,
+      "avg_hours_to_close": 37486.26219444444
+    },
+    {
+      "name": "ralbertazzi",
+      "count": 26,
+      "avg_hours_to_close": 16494.40689102564
+    },
+    {
+      "name": null,
+      "count": 20,
+      "avg_hours_to_close": 33009.76684722222
+    },
+    {
+      "name": "branchvincent",
+      "count": 20,
+      "avg_hours_to_close": 22335.26063888889
+    },
+    {
+      "name": "brycedrennan",
+      "count": 19,
+      "avg_hours_to_close": 40712.37353801171
+    },
+    {
+      "name": "cjw296",
+      "count": 13,
+      "avg_hours_to_close": 46246.24743589743
+    },
+    {
+      "name": "KyleKing",
+      "count": 9,
+      "avg_hours_to_close": 39698.236049382715
+    }
+  ],
+  "total_closed_issues": 5845
+}

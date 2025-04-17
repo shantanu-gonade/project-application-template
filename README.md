@@ -4,7 +4,7 @@ This application analyzes GitHub issues from the [poetry](https://github.com/pyt
 
 ## Features
 
-The application will implement three different analyses:
+The application implements several different analyses:
 
 1. **Label Analysis** (Feature 1): Analyzes issues based on labels
 
@@ -21,11 +21,57 @@ The application will implement three different analyses:
    - Can focus on a specific contributor using the `--user` parameter
 
 3. **Timeline Analysis** (Feature 3): Analyzes issue activity over time
+
    - Shows issue creation and closing patterns over time
    - Analyzes issue lifecycle (time to first response, time to resolution)
    - Identifies activity trends and patterns (by day of week, hour of day)
 
-Each analysis provides both textual output to the console and visual charts using matplotlib.
+4. **Network Analysis** (Feature 4): Analyzes network relationships
+
+   - Creates label co-occurrence network
+   - Creates contributor collaboration network
+   - Visualizes network relationships using graph visualizations
+
+5. **Complexity Analysis** (Feature 5): Analyzes issue complexity
+
+   - Calculates complexity scores based on various metrics
+   - Analyzes correlation between complexity and resolution time
+   - Identifies most complex issues and labels
+
+6. **Resolution Prediction** (Feature 6): Predicts issue resolution time
+   - Builds a machine learning model to predict quick vs. slow resolution
+   - Identifies factors that contribute to faster resolution
+   - Provides recommendations for improving issue resolution
+
+## Project Structure
+
+The application is organized into a modular structure:
+
+```
+github-issue-analysis/
+├── src/
+│   ├── core/
+│   │   ├── model.py          # Data models (Issue, Event, State)
+│   │   ├── data_loader.py    # Data loading functionality
+│   │   └── config.py         # Configuration handling
+│   ├── analysis/
+│   │   ├── base.py           # Base analysis class with common functionality
+│   │   ├── label_analysis.py
+│   │   ├── contributor_analysis.py
+│   │   ├── timeline_analysis.py
+│   │   ├── network_analysis.py
+│   │   ├── complexity_analysis.py
+│   │   └── resolution_prediction.py
+│   ├── visualization/
+│   │   ├── plotting.py       # Common plotting functions
+│   │   └── report.py         # Report generation utilities
+│   └── utils/
+│       └── helpers.py        # Common utility functions
+├── results/                  # Directory for analysis results
+├── run.py                    # Main entry point
+├── config.json               # Configuration file
+└── requirements.txt          # Dependencies
+```
 
 ## Setup
 
@@ -91,30 +137,43 @@ To run the timeline analysis:
 python run.py --feature 3
 ```
 
-### Example Analysis
+### Network Analysis
 
-The original example analysis is still available:
+To run the network analysis:
 
 ```
-python run.py --feature 0
+python run.py --feature 4
 ```
 
-## Implementation Details
+### Complexity Analysis
 
-The application is structured as follows:
+To run the complexity analysis:
 
-- `data_loader.py`: Loads the issues from the JSON data file
-- `model.py`: Defines the data model (Issue, Event, State)
-- `config.py`: Handles configuration parameters
-- `run.py`: Main entry point that runs the specified analysis
-- `label_analysis.py`: Implements the label analysis
-- `contributor_analysis.py`: Implements the contributor analysis
-- `timeline_analysis.py`: Implements the timeline analysis
+```
+python run.py --feature 5
+```
 
-Each analysis class follows a similar structure:
+### Resolution Prediction
 
-1. Initialize with any parameters (e.g., label, user)
-2. Load the issues data
-3. Perform the analysis
-4. Output results to the console
-5. Generate visualizations using matplotlib
+To run the resolution prediction:
+
+```
+python run.py --feature 6
+```
+
+## Analysis Results
+
+Each analysis generates both textual output to the console and visual charts using matplotlib. The results are saved in the `results/` directory, organized by analysis type:
+
+- Text reports (`.txt` and `.md` files)
+- JSON data files
+- Visualizations (`.png` files)
+
+## Extending the Application
+
+To add a new analysis:
+
+1. Create a new analysis class in the `src/analysis/` directory, inheriting from `BaseAnalysis`
+2. Implement the required methods: `analyze()`, `visualize()`, and `save_results()`
+3. Add the new analysis to the `run.py` file
+4. Update the README.md with information about the new analysis
