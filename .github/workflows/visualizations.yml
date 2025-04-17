@@ -25,10 +25,18 @@ jobs:
           python run.py --feature 1
           python run.py --feature 2
           python run.py --feature 3
+          python run.py --feature 4
+          python run.py --feature 5
+          python run.py --feature 6
       - name: Upload visualization artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: visualizations
           path: |
-            Timeline Analysis/*.png
-            contributor_analysis_results/images/*.png
+            results/contributor_analysis_results/images/*.png
+            results/label_analysis/images/*.png
+            results/label_analysis_area_repo/images/*.png
+            results/Timeline Analysis/*.png
+            results/complexity_analysis/images/*.png
+            results/network_analysis/images/*.png
+            results/resolution_prediction/images/*.png

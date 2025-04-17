@@ -25,4 +25,4 @@ jobs:
           pip install jsonschema
       - name: Validate JSON structure
         run: |
-          python -c "import json; json.load(open('poetry_data.json'))"
+          python -c "import json; json.load(open('data/poetry_data.json'))"

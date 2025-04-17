@@ -1,0 +1,492 @@
+{
+  "label_complexity": {
+    "kind/bug": {
+      "avg_complexity": 17.31423396839743,
+      "issue_count": 3181
+    },
+    "status/triage": {
+      "avg_complexity": 14.79135673601506,
+      "issue_count": 1446
+    },
+    "area/docs": {
+      "avg_complexity": 14.359635658280334,
+      "issue_count": 297
+    },
+    "kind/feature": {
+      "avg_complexity": 16.336140487877437,
+      "issue_count": 996
+    },
+    "area/core": {
+      "avg_complexity": 17.06562158764368,
+      "issue_count": 58
+    },
+    "area/solver": {
+      "avg_complexity": 21.122297919116207,
+      "issue_count": 189
+    },
+    "area/config": {
+      "avg_complexity": 19.088350597993827,
+      "issue_count": 24
+    },
+    "area/venv": {
+      "avg_complexity": 20.132479401276274,
+      "issue_count": 74
+    },
+    "status/duplicate": {
+      "avg_complexity": 15.794011261645082,
+      "issue_count": 326
+    },
+    "area/build-system": {
+      "avg_complexity": 18.056506079434698,
+      "issue_count": 95
+    },
+    "area/distribution": {
+      "avg_complexity": 16.016293981481482,
+      "issue_count": 5
+    },
+    "kind/question": {
+      "avg_complexity": 15.934705100574712,
+      "issue_count": 290
+    },
+    "area/deps": {
+      "avg_complexity": 18.86317115162037,
+      "issue_count": 24
+    },
+    "area/error-handling": {
+      "avg_complexity": 18.25883615136876,
+      "issue_count": 46
+    },
+    "status/waiting-on-response": {
+      "avg_complexity": 17.5054475308642,
+      "issue_count": 42
+    },
+    "area/cli": {
+      "avg_complexity": 19.056493813282707,
+      "issue_count": 139
+    },
+    "area/installer": {
+      "avg_complexity": 20.645130555555557,
+      "issue_count": 120
+    },
+    "area/testing": {
+      "avg_complexity": 14.08967824074074,
+      "issue_count": 7
+    },
+    "status/confirmed": {
+      "avg_complexity": 19.31633521412037,
+      "issue_count": 32
+    },
+    "area/pyproject": {
+      "avg_complexity": 22.58551550925926,
+      "issue_count": 10
+    },
+    "status/wontfix": {
+      "avg_complexity": 24.91950038580247,
+      "issue_count": 12
+    },
+    "area/sources": {
+      "avg_complexity": 21.35957883986928,
+      "issue_count": 34
+    },
+    "status/external-issue": {
+      "avg_complexity": 19.193272641782407,
+      "issue_count": 160
+    },
+    "good first issue": {
+      "avg_complexity": 15.985887731481482,
+      "issue_count": 28
+    },
+    "area/project/deps": {
+      "avg_complexity": 12.32792259837963,
+      "issue_count": 8
+    },
+    "status/accepted": {
+      "avg_complexity": 18.5,
+      "issue_count": 6
+    },
+    "area/auth": {
+      "avg_complexity": 17.99501523919753,
+      "issue_count": 12
+    },
+    "area/peps": {
+      "avg_complexity": 17.38066640946502,
+      "issue_count": 9
+    },
+    "area/ux": {
+      "avg_complexity": 17.588628902885443,
+      "issue_count": 43
+    },
+    "area/show": {
+      "avg_complexity": 10.778783442982457,
+      "issue_count": 19
+    },
+    "status/needs-reproduction": {
+      "avg_complexity": 19.067440626727475,
+      "issue_count": 67
+    },
+    "kind/enhancement": {
+      "avg_complexity": 19.906677378841607,
+      "issue_count": 47
+    },
+    "area/plugin-api": {
+      "avg_complexity": 18.090875548245616,
+      "issue_count": 19
+    },
+    "area/publishing": {
+      "avg_complexity": 18.731695746527777,
+      "issue_count": 24
+    },
+    "area/shell": {
+      "avg_complexity": 22.875,
+      "issue_count": 4
+    },
+    "area/python": {
+      "avg_complexity": 14.333333333333334,
+      "issue_count": 3
+    },
+    "area/vcs": {
+      "avg_complexity": 20.21230584490741,
+      "issue_count": 24
+    },
+    "area/scripts": {
+      "avg_complexity": 19.060702546296298,
+      "issue_count": 13
+    },
+    "area/repo": {
+      "avg_complexity": 22.025,
+      "issue_count": 20
+    },
+    "area/windows": {
+      "avg_complexity": 18.768262556116724,
+      "issue_count": 33
+    },
+    "area/init": {
+      "avg_complexity": 25.166666666666668,
+      "issue_count": 12
+    },
+    "kind/release": {
+      "avg_complexity": 20.0,
+      "issue_count": 8
+    },
+    "area/ci": {
+      "avg_complexity": 13.75,
+      "issue_count": 4
+    },
+    "area/project": {
+      "avg_complexity": 14.166666666666666,
+      "issue_count": 9
+    },
+    "status/waiting-on-core": {
+      "avg_complexity": 23.681818181818183,
+      "issue_count": 11
+    },
+    "status/needs-consensus": {
+      "avg_complexity": 19.82958394607843,
+      "issue_count": 17
+    },
+    "area/docs/faq": {
+      "avg_complexity": 19.055555555555557,
+      "issue_count": 36
+    },
+    "status/invalid": {
+      "avg_complexity": 13.233395736882715,
+      "issue_count": 24
+    },
+    "status/needs-attention": {
+      "avg_complexity": 16.166666666666668,
+      "issue_count": 3
+    },
+    "version/1.2.2": {
+      "avg_complexity": 18.101036342592593,
+      "issue_count": 5
+    },
+    "kind/refactor": {
+      "avg_complexity": 11.875,
+      "issue_count": 4
+    },
+    "impact/deprecation": {
+      "avg_complexity": 18.0,
+      "issue_count": 4
+    },
+    "version/1.2.1": {
+      "avg_complexity": 18.045454545454547,
+      "issue_count": 11
+    },
+    "version/1.2.0": {
+      "avg_complexity": 18.375945891203703,
+      "issue_count": 4
+    }
+  },
+  "sorted_labels": [
+    [
+      "area/init",
+      25.166666666666668,
+      12
+    ],
+    [
+      "status/wontfix",
+      24.91950038580247,
+      12
+    ],
+    [
+      "status/waiting-on-core",
+      23.681818181818183,
+      11
+    ],
+    [
+      "area/shell",
+      22.875,
+      4
+    ],
+    [
+      "area/pyproject",
+      22.58551550925926,
+      10
+    ],
+    [
+      "area/repo",
+      22.025,
+      20
+    ],
+    [
+      "area/sources",
+      21.35957883986928,
+      34
+    ],
+    [
+      "area/solver",
+      21.122297919116207,
+      189
+    ],
+    [
+      "area/installer",
+      20.645130555555557,
+      120
+    ],
+    [
+      "area/vcs",
+      20.21230584490741,
+      24
+    ],
+    [
+      "area/venv",
+      20.132479401276274,
+      74
+    ],
+    [
+      "kind/release",
+      20.0,
+      8
+    ],
+    [
+      "kind/enhancement",
+      19.906677378841607,
+      47
+    ],
+    [
+      "status/needs-consensus",
+      19.82958394607843,
+      17
+    ],
+    [
+      "status/confirmed",
+      19.31633521412037,
+      32
+    ],
+    [
+      "status/external-issue",
+      19.193272641782407,
+      160
+    ],
+    [
+      "area/config",
+      19.088350597993827,
+      24
+    ],
+    [
+      "status/needs-reproduction",
+      19.067440626727475,
+      67
+    ],
+    [
+      "area/scripts",
+      19.060702546296298,
+      13
+    ],
+    [
+      "area/cli",
+      19.056493813282707,
+      139
+    ],
+    [
+      "area/docs/faq",
+      19.055555555555557,
+      36
+    ],
+    [
+      "area/deps",
+      18.86317115162037,
+      24
+    ],
+    [
+      "area/windows",
+      18.768262556116724,
+      33
+    ],
+    [
+      "area/publishing",
+      18.731695746527777,
+      24
+    ],
+    [
+      "status/accepted",
+      18.5,
+      6
+    ],
+    [
+      "version/1.2.0",
+      18.375945891203703,
+      4
+    ],
+    [
+      "area/error-handling",
+      18.25883615136876,
+      46
+    ],
+    [
+      "version/1.2.2",
+      18.101036342592593,
+      5
+    ],
+    [
+      "area/plugin-api",
+      18.090875548245616,
+      19
+    ],
+    [
+      "area/build-system",
+      18.056506079434698,
+      95
+    ],
+    [
+      "version/1.2.1",
+      18.045454545454547,
+      11
+    ],
+    [
+      "impact/deprecation",
+      18.0,
+      4
+    ],
+    [
+      "area/auth",
+      17.99501523919753,
+      12
+    ],
+    [
+      "area/ux",
+      17.588628902885443,
+      43
+    ],
+    [
+      "status/waiting-on-response",
+      17.5054475308642,
+      42
+    ],
+    [
+      "area/peps",
+      17.38066640946502,
+      9
+    ],
+    [
+      "kind/bug",
+      17.31423396839743,
+      3181
+    ],
+    [
+      "area/core",
+      17.06562158764368,
+      58
+    ],
+    [
+      "kind/feature",
+      16.336140487877437,
+      996
+    ],
+    [
+      "status/needs-attention",
+      16.166666666666668,
+      3
+    ],
+    [
+      "area/distribution",
+      16.016293981481482,
+      5
+    ],
+    [
+      "good first issue",
+      15.985887731481482,
+      28
+    ],
+    [
+      "kind/question",
+      15.934705100574712,
+      290
+    ],
+    [
+      "status/duplicate",
+      15.794011261645082,
+      326
+    ],
+    [
+      "status/triage",
+      14.79135673601506,
+      1446
+    ],
+    [
+      "area/docs",
+      14.359635658280334,
+      297
+    ],
+    [
+      "area/python",
+      14.333333333333334,
+      3
+    ],
+    [
+      "area/project",
+      14.166666666666666,
+      9
+    ],
+    [
+      "area/testing",
+      14.08967824074074,
+      7
+    ],
+    [
+      "area/ci",
+      13.75,
+      4
+    ],
+    [
+      "status/invalid",
+      13.233395736882715,
+      24
+    ],
+    [
+      "area/project/deps",
+      12.32792259837963,
+      8
+    ],
+    [
+      "kind/refactor",
+      11.875,
+      4
+    ],
+    [
+      "area/show",
+      10.778783442982457,
+      19
+    ]
+  ]
+}

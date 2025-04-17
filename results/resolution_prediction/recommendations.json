@@ -1,0 +1,52 @@
+{
+  "recommendations": [
+    {
+      "feature": "description_length",
+      "recommendation": "Provide detailed issue descriptions with clear steps to reproduce",
+      "importance": 0.31829770848467787
+    },
+    {
+      "feature": "participant_count",
+      "recommendation": "Involve relevant team members in issue discussions early",
+      "importance": 0.17585176122710003
+    },
+    {
+      "feature": "comment_count",
+      "recommendation": "Encourage active discussion on issues to clarify requirements and solutions",
+      "importance": 0.12863310011155846
+    },
+    {
+      "feature": "general",
+      "recommendation": "Implement issue templates to ensure consistent information",
+      "importance": 0.8
+    },
+    {
+      "feature": "general",
+      "recommendation": "Regularly review and prioritize older unresolved issues",
+      "importance": 0.7
+    },
+    {
+      "feature": "general",
+      "recommendation": "Assign issues to specific team members for accountability",
+      "importance": 0.6
+    }
+  ],
+  "significant_factors": [
+    {
+      "factor": "comment_count",
+      "difference": -34.69161162237371,
+      "direction": "lower"
+    },
+    {
+      "factor": "participant_count",
+      "difference": -34.11335701415508,
+      "direction": "lower"
+    },
+    {
+      "factor": "description_length",
+      "difference": 60.90598644245281,
+      "direction": "higher"
+    }
+  ],
+  "categorical_factors": []
+}

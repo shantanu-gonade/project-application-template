@@ -1,0 +1,107 @@
+{
+  "correlation_matrix": {
+    "title_length": {
+      "title_length": 1.0,
+      "description_length": 0.10676751431453778,
+      "label_count": 0.12515366888013216,
+      "comment_count": 0.007277525123949466,
+      "participant_count": 0.0023846384693265985,
+      "resolution_time": -0.00873320587550332
+    },
+    "description_length": {
+      "title_length": 0.10676751431453778,
+      "description_length": 1.0,
+      "label_count": 0.16160134937181514,
+      "comment_count": 0.00307980956202675,
+      "participant_count": -0.03681017636825385,
+      "resolution_time": -0.09280219068713125
+    },
+    "label_count": {
+      "title_length": 0.12515366888013216,
+      "description_length": 0.16160134937181514,
+      "label_count": 1.0,
+      "comment_count": 0.034613806670734416,
+      "participant_count": 0.037754066335456284,
+      "resolution_time": 0.10614666689153733
+    },
+    "comment_count": {
+      "title_length": 0.007277525123949466,
+      "description_length": 0.00307980956202675,
+      "label_count": 0.034613806670734416,
+      "comment_count": 1.0,
+      "participant_count": 0.8894245059234118,
+      "resolution_time": 0.18989287427077844
+    },
+    "participant_count": {
+      "title_length": 0.0023846384693265985,
+      "description_length": -0.03681017636825385,
+      "label_count": 0.037754066335456284,
+      "comment_count": 0.8894245059234118,
+      "participant_count": 1.0,
+      "resolution_time": 0.2792272390467846
+    },
+    "resolution_time": {
+      "title_length": -0.00873320587550332,
+      "description_length": -0.09280219068713125,
+      "label_count": 0.10614666689153733,
+      "comment_count": 0.18989287427077844,
+      "participant_count": 0.2792272390467846,
+      "resolution_time": 1.0
+    }
+  },
+  "resolution_correlations": {
+    "title_length": -0.00873320587550332,
+    "description_length": -0.09280219068713125,
+    "label_count": 0.10614666689153733,
+    "comment_count": 0.18989287427077844,
+    "participant_count": 0.2792272390467846
+  },
+  "sorted_correlations": [
+    [
+      "participant_count",
+      0.2792272390467846
+    ],
+    [
+      "comment_count",
+      0.18989287427077844
+    ],
+    [
+      "label_count",
+      0.10614666689153733
+    ],
+    [
+      "description_length",
+      -0.09280219068713125
+    ],
+    [
+      "title_length",
+      -0.00873320587550332
+    ]
+  ],
+  "categorical_impact": {
+    "has_bug_label": {
+      "avg_time_true": 155.6044332442354,
+      "avg_time_false": 213.50706556377608,
+      "difference": -57.902632319540686,
+      "difference_pct": -27.119773374546597
+    },
+    "has_feature_label": {
+      "avg_time_true": 323.9543930908124,
+      "avg_time_false": 159.9557512010018,
+      "difference": 163.9986418898106,
+      "difference_pct": 102.52750567482158
+    },
+    "has_enhancement_label": {
+      "avg_time_true": 530.7538569078948,
+      "avg_time_false": 180.91599858918346,
+      "difference": 349.83785831871137,
+      "difference_pct": 193.37032713901033
+    },
+    "has_code": {
+      "avg_time_true": 182.9364689942285,
+      "avg_time_false": 184.39530104952397,
+      "difference": -1.45883205529546,
+      "difference_pct": -0.7911438344644445
+    }
+  }
+}

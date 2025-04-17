@@ -1,0 +1,76 @@
+# Network Analysis Report
+
+*Generated: 2025-04-17 15:20:53*
+
+## Introduction
+
+Analysis of network relationships in GitHub issues
+
+## Label Co-occurrence Network
+
+Label co-occurrence network:
+
+Number of labels: 56
+Number of co-occurrences: 372
+
+Top 10 most common labels:
+
+1. kind/bug: 1607 occurrences
+2. status/triage: 1446 occurrences
+3. kind/feature: 553 occurrences
+4. area/solver: 185 occurrences
+5. status/duplicate: 134 occurrences
+6. area/cli: 130 occurrences
+7. area/installer: 119 occurrences
+8. area/docs: 118 occurrences
+9. area/build-system: 90 occurrences
+10. status/external-issue: 86 occurrences
+
+Top 10 most common label co-occurrences:
+
+1. kind/bug + status/triage: 1003 co-occurrences
+2. kind/feature + status/triage: 370 co-occurrences
+3. area/solver + kind/bug: 152 co-occurrences
+4. area/installer + kind/bug: 90 co-occurrences
+5. kind/bug + status/duplicate: 88 co-occurrences
+6. area/docs + status/triage: 71 co-occurrences
+7. area/cli + kind/bug: 71 co-occurrences
+8. area/build-system + kind/bug: 62 co-occurrences
+9. area/venv + kind/bug: 54 co-occurrences
+10. kind/bug + status/external-issue: 48 co-occurrences
+
+
+## Contributor Collaboration Network
+
+Contributor collaboration network:
+
+Number of contributors: 9046
+Number of collaborations: 117067
+
+Top 10 most active contributors:
+
+1. github-actions[bot]: 5547 issues
+2. dimbleby: 1915 issues
+3. finswimmer: 1806 issues
+4. abn: 1787 issues
+5. neersighted: 1129 issues
+6. sdispater: 924 issues
+7. Secrus: 772 issues
+8. mkniewallner: 723 issues
+9. radoering: 681 issues
+10. stale[bot]: 308 issues
+
+Top 10 most common collaborations:
+
+1. abn + github-actions[bot]: 1684 collaborations
+2. dimbleby + github-actions[bot]: 1682 collaborations
+3. finswimmer + github-actions[bot]: 1675 collaborations
+4. github-actions[bot] + neersighted: 1002 collaborations
+5. github-actions[bot] + sdispater: 888 collaborations
+6. github-actions[bot] + mkniewallner: 705 collaborations
+7. abn + finswimmer: 657 collaborations
+8. Secrus + github-actions[bot]: 609 collaborations
+9. github-actions[bot] + radoering: 601 collaborations
+10. dimbleby + neersighted: 425 collaborations
+
+

@@ -1,0 +1,2666 @@
+{
+  "nodes": [
+    "kind/bug",
+    "status/triage",
+    "area/docs",
+    "kind/feature",
+    "area/core",
+    "area/solver",
+    "impact/backport",
+    "area/config",
+    "area/venv",
+    "status/duplicate",
+    "area/build-system",
+    "area/distribution",
+    "area/deps",
+    "area/error-handling",
+    "area/cli",
+    "area/installer",
+    "area/testing",
+    "status/confirmed",
+    "area/pyproject",
+    "status/wontfix",
+    "area/sources",
+    "status/external-issue",
+    "good first issue",
+    "area/project/deps",
+    "status/accepted",
+    "area/auth",
+    "area/peps",
+    "area/ux",
+    "area/show",
+    "status/needs-reproduction",
+    "kind/enhancement",
+    "area/plugin-api",
+    "area/publishing",
+    "area/shell",
+    "area/python",
+    "area/vcs",
+    "area/scripts",
+    "area/repo",
+    "status/waiting-on-response",
+    "area/windows",
+    "area/auth/keyring",
+    "area/init",
+    "kind/question",
+    "area/project",
+    "status/waiting-on-core",
+    "status/needs-consensus",
+    "area/docs/faq",
+    "version/1.3.1",
+    "status/needs-attention",
+    "version/1.2.2",
+    "kind/refactor",
+    "impact/deprecation",
+    "version/1.2.1",
+    "status/invalid",
+    "version/1.2.0",
+    "area/ci"
+  ],
+  "edges": [
+    [
+      "kind/bug",
+      "status/triage",
+      {
+        "weight": 1003
+      }
+    ],
+    [
+      "kind/bug",
+      "area/core",
+      {
+        "weight": 44
+      }
+    ],
+    [
+      "kind/bug",
+      "area/solver",
+      {
+        "weight": 152
+      }
+    ],
+    [
+      "kind/bug",
+      "impact/backport",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/bug",
+      "area/venv",
+      {
+        "weight": 54
+      }
+    ],
+    [
+      "kind/bug",
+      "status/duplicate",
+      {
+        "weight": 88
+      }
+    ],
+    [
+      "kind/bug",
+      "area/build-system",
+      {
+        "weight": 62
+      }
+    ],
+    [
+      "kind/bug",
+      "area/distribution",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "kind/bug",
+      "area/error-handling",
+      {
+        "weight": 20
+      }
+    ],
+    [
+      "kind/bug",
+      "area/deps",
+      {
+        "weight": 21
+      }
+    ],
+    [
+      "kind/bug",
+      "area/cli",
+      {
+        "weight": 71
+      }
+    ],
+    [
+      "kind/bug",
+      "area/installer",
+      {
+        "weight": 90
+      }
+    ],
+    [
+      "kind/bug",
+      "area/testing",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "kind/bug",
+      "status/confirmed",
+      {
+        "weight": 26
+      }
+    ],
+    [
+      "kind/bug",
+      "area/pyproject",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "kind/bug",
+      "status/external-issue",
+      {
+        "weight": 48
+      }
+    ],
+    [
+      "kind/bug",
+      "area/project/deps",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "kind/bug",
+      "area/auth",
+      {
+        "weight": 11
+      }
+    ],
+    [
+      "kind/bug",
+      "area/ux",
+      {
+        "weight": 15
+      }
+    ],
+    [
+      "kind/bug",
+      "area/show",
+      {
+        "weight": 8
+      }
+    ],
+    [
+      "kind/bug",
+      "status/needs-reproduction",
+      {
+        "weight": 48
+      }
+    ],
+    [
+      "kind/bug",
+      "area/publishing",
+      {
+        "weight": 16
+      }
+    ],
+    [
+      "kind/bug",
+      "area/shell",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "kind/bug",
+      "area/python",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "kind/bug",
+      "area/sources",
+      {
+        "weight": 17
+      }
+    ],
+    [
+      "kind/bug",
+      "area/vcs",
+      {
+        "weight": 20
+      }
+    ],
+    [
+      "kind/bug",
+      "area/windows",
+      {
+        "weight": 27
+      }
+    ],
+    [
+      "kind/bug",
+      "status/waiting-on-response",
+      {
+        "weight": 32
+      }
+    ],
+    [
+      "kind/bug",
+      "area/init",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "kind/bug",
+      "area/docs",
+      {
+        "weight": 11
+      }
+    ],
+    [
+      "kind/bug",
+      "area/peps",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "kind/bug",
+      "status/waiting-on-core",
+      {
+        "weight": 10
+      }
+    ],
+    [
+      "kind/bug",
+      "area/config",
+      {
+        "weight": 9
+      }
+    ],
+    [
+      "kind/bug",
+      "area/auth/keyring",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/bug",
+      "area/plugin-api",
+      {
+        "weight": 7
+      }
+    ],
+    [
+      "kind/bug",
+      "version/1.3.1",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/bug",
+      "status/needs-attention",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "kind/bug",
+      "version/1.2.2",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "kind/bug",
+      "area/scripts",
+      {
+        "weight": 7
+      }
+    ],
+    [
+      "kind/bug",
+      "good first issue",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "kind/bug",
+      "version/1.2.1",
+      {
+        "weight": 7
+      }
+    ],
+    [
+      "kind/bug",
+      "version/1.2.0",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "kind/bug",
+      "kind/question",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/bug",
+      "status/needs-consensus",
+      {
+        "weight": 7
+      }
+    ],
+    [
+      "kind/bug",
+      "area/repo",
+      {
+        "weight": 15
+      }
+    ],
+    [
+      "kind/bug",
+      "status/accepted",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/bug",
+      "kind/enhancement",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "kind/bug",
+      "area/docs/faq",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "kind/bug",
+      "kind/feature",
+      {
+        "weight": 6
+      }
+    ],
+    [
+      "status/triage",
+      "area/docs",
+      {
+        "weight": 71
+      }
+    ],
+    [
+      "status/triage",
+      "kind/feature",
+      {
+        "weight": 370
+      }
+    ],
+    [
+      "status/triage",
+      "area/error-handling",
+      {
+        "weight": 7
+      }
+    ],
+    [
+      "status/triage",
+      "area/cli",
+      {
+        "weight": 10
+      }
+    ],
+    [
+      "status/triage",
+      "status/confirmed",
+      {
+        "weight": 6
+      }
+    ],
+    [
+      "status/triage",
+      "area/pyproject",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/triage",
+      "area/sources",
+      {
+        "weight": 14
+      }
+    ],
+    [
+      "status/triage",
+      "area/solver",
+      {
+        "weight": 18
+      }
+    ],
+    [
+      "status/triage",
+      "status/needs-reproduction",
+      {
+        "weight": 6
+      }
+    ],
+    [
+      "status/triage",
+      "area/publishing",
+      {
+        "weight": 7
+      }
+    ],
+    [
+      "status/triage",
+      "area/auth",
+      {
+        "weight": 6
+      }
+    ],
+    [
+      "status/triage",
+      "area/venv",
+      {
+        "weight": 24
+      }
+    ],
+    [
+      "status/triage",
+      "area/installer",
+      {
+        "weight": 26
+      }
+    ],
+    [
+      "status/triage",
+      "status/external-issue",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "status/triage",
+      "area/shell",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/triage",
+      "area/python",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "status/triage",
+      "area/vcs",
+      {
+        "weight": 13
+      }
+    ],
+    [
+      "status/triage",
+      "area/scripts",
+      {
+        "weight": 12
+      }
+    ],
+    [
+      "status/triage",
+      "area/repo",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "status/triage",
+      "area/show",
+      {
+        "weight": 14
+      }
+    ],
+    [
+      "status/triage",
+      "status/waiting-on-response",
+      {
+        "weight": 17
+      }
+    ],
+    [
+      "status/triage",
+      "area/windows",
+      {
+        "weight": 15
+      }
+    ],
+    [
+      "status/triage",
+      "area/deps",
+      {
+        "weight": 17
+      }
+    ],
+    [
+      "status/triage",
+      "area/auth/keyring",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/triage",
+      "area/init",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/triage",
+      "area/project/deps",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/triage",
+      "area/ux",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "status/triage",
+      "area/build-system",
+      {
+        "weight": 13
+      }
+    ],
+    [
+      "status/triage",
+      "area/distribution",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "status/triage",
+      "area/config",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/triage",
+      "area/plugin-api",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "status/triage",
+      "area/core",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "status/triage",
+      "status/duplicate",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/triage",
+      "status/needs-attention",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/triage",
+      "status/needs-consensus",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "status/triage",
+      "kind/enhancement",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "status/triage",
+      "area/docs/faq",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/docs",
+      "kind/enhancement",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/docs",
+      "area/scripts",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/docs",
+      "area/installer",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/docs",
+      "kind/feature",
+      {
+        "weight": 6
+      }
+    ],
+    [
+      "area/docs",
+      "good first issue",
+      {
+        "weight": 10
+      }
+    ],
+    [
+      "area/docs",
+      "kind/question",
+      {
+        "weight": 8
+      }
+    ],
+    [
+      "area/docs",
+      "status/needs-consensus",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/docs",
+      "area/venv",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/docs",
+      "area/ux",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/docs",
+      "area/publishing",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/docs",
+      "area/config",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/docs",
+      "area/core",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/docs",
+      "status/duplicate",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/docs",
+      "area/docs/faq",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/docs",
+      "area/cli",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/docs",
+      "area/build-system",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/feature",
+      "area/config",
+      {
+        "weight": 14
+      }
+    ],
+    [
+      "kind/feature",
+      "area/deps",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/feature",
+      "status/wontfix",
+      {
+        "weight": 6
+      }
+    ],
+    [
+      "kind/feature",
+      "area/cli",
+      {
+        "weight": 45
+      }
+    ],
+    [
+      "kind/feature",
+      "area/sources",
+      {
+        "weight": 10
+      }
+    ],
+    [
+      "kind/feature",
+      "good first issue",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "kind/feature",
+      "status/accepted",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "kind/feature",
+      "area/pyproject",
+      {
+        "weight": 7
+      }
+    ],
+    [
+      "kind/feature",
+      "area/peps",
+      {
+        "weight": 6
+      }
+    ],
+    [
+      "kind/feature",
+      "status/duplicate",
+      {
+        "weight": 19
+      }
+    ],
+    [
+      "kind/feature",
+      "area/plugin-api",
+      {
+        "weight": 8
+      }
+    ],
+    [
+      "kind/feature",
+      "area/repo",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "kind/feature",
+      "area/auth",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/feature",
+      "area/show",
+      {
+        "weight": 11
+      }
+    ],
+    [
+      "kind/feature",
+      "status/waiting-on-response",
+      {
+        "weight": 8
+      }
+    ],
+    [
+      "kind/feature",
+      "area/auth/keyring",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/feature",
+      "status/external-issue",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "kind/feature",
+      "area/build-system",
+      {
+        "weight": 22
+      }
+    ],
+    [
+      "kind/feature",
+      "area/core",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "kind/feature",
+      "status/needs-consensus",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "kind/feature",
+      "area/scripts",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "kind/feature",
+      "area/init",
+      {
+        "weight": 8
+      }
+    ],
+    [
+      "kind/feature",
+      "area/ux",
+      {
+        "weight": 11
+      }
+    ],
+    [
+      "kind/feature",
+      "area/solver",
+      {
+        "weight": 12
+      }
+    ],
+    [
+      "kind/feature",
+      "area/installer",
+      {
+        "weight": 16
+      }
+    ],
+    [
+      "kind/feature",
+      "area/error-handling",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "kind/feature",
+      "kind/enhancement",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "kind/feature",
+      "area/venv",
+      {
+        "weight": 11
+      }
+    ],
+    [
+      "kind/feature",
+      "area/ci",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/feature",
+      "status/waiting-on-core",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/feature",
+      "area/docs/faq",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "kind/feature",
+      "kind/question",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "kind/feature",
+      "area/publishing",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/core",
+      "area/solver",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "area/core",
+      "status/duplicate",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/core",
+      "area/build-system",
+      {
+        "weight": 11
+      }
+    ],
+    [
+      "area/core",
+      "area/testing",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/core",
+      "area/installer",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/core",
+      "status/waiting-on-core",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "area/core",
+      "area/deps",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/core",
+      "area/peps",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/core",
+      "status/confirmed",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "area/core",
+      "area/vcs",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/core",
+      "version/1.2.2",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/core",
+      "impact/deprecation",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/core",
+      "kind/enhancement",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "area/core",
+      "good first issue",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/core",
+      "version/1.2.1",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/core",
+      "status/needs-consensus",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/core",
+      "kind/refactor",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/core",
+      "area/error-handling",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/core",
+      "area/pyproject",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/solver",
+      "impact/backport",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/solver",
+      "area/installer",
+      {
+        "weight": 12
+      }
+    ],
+    [
+      "area/solver",
+      "area/sources",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/solver",
+      "area/vcs",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/solver",
+      "area/peps",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/solver",
+      "area/error-handling",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "area/solver",
+      "kind/question",
+      {
+        "weight": 10
+      }
+    ],
+    [
+      "area/solver",
+      "status/duplicate",
+      {
+        "weight": 8
+      }
+    ],
+    [
+      "area/solver",
+      "status/confirmed",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/solver",
+      "version/1.2.2",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/solver",
+      "area/ux",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/solver",
+      "status/wontfix",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/solver",
+      "version/1.2.1",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/solver",
+      "status/needs-consensus",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/solver",
+      "kind/enhancement",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/solver",
+      "area/docs/faq",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/solver",
+      "area/cli",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/solver",
+      "status/external-issue",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/solver",
+      "status/needs-reproduction",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/config",
+      "area/cli",
+      {
+        "weight": 6
+      }
+    ],
+    [
+      "area/config",
+      "area/auth",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/config",
+      "area/installer",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/config",
+      "good first issue",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/config",
+      "area/vcs",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/config",
+      "area/publishing",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/config",
+      "area/build-system",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "area/venv",
+      "area/installer",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/venv",
+      "area/deps",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/venv",
+      "area/windows",
+      {
+        "weight": 7
+      }
+    ],
+    [
+      "area/venv",
+      "kind/question",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/venv",
+      "status/waiting-on-response",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/venv",
+      "kind/enhancement",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/venv",
+      "area/ux",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/venv",
+      "good first issue",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/venv",
+      "status/confirmed",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "area/venv",
+      "version/1.2.1",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/venv",
+      "status/needs-reproduction",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/venv",
+      "status/wontfix",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/venv",
+      "status/external-issue",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/venv",
+      "area/cli",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "area/venv",
+      "status/needs-consensus",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/venv",
+      "area/docs/faq",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/venv",
+      "area/plugin-api",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/duplicate",
+      "area/installer",
+      {
+        "weight": 7
+      }
+    ],
+    [
+      "status/duplicate",
+      "status/external-issue",
+      {
+        "weight": 10
+      }
+    ],
+    [
+      "status/duplicate",
+      "area/cli",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "status/duplicate",
+      "area/ux",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/duplicate",
+      "kind/question",
+      {
+        "weight": 14
+      }
+    ],
+    [
+      "status/duplicate",
+      "area/sources",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/duplicate",
+      "area/build-system",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/duplicate",
+      "area/distribution",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/duplicate",
+      "area/windows",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "status/duplicate",
+      "status/wontfix",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/duplicate",
+      "area/auth",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/duplicate",
+      "area/error-handling",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/build-system",
+      "area/distribution",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/build-system",
+      "area/sources",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/build-system",
+      "version/1.2.2",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/build-system",
+      "status/external-issue",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/build-system",
+      "status/needs-consensus",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/build-system",
+      "kind/question",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/build-system",
+      "area/ux",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/build-system",
+      "status/waiting-on-core",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/build-system",
+      "area/installer",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/build-system",
+      "status/confirmed",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/build-system",
+      "area/plugin-api",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/build-system",
+      "area/cli",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/deps",
+      "area/installer",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "area/deps",
+      "kind/question",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/deps",
+      "area/windows",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/deps",
+      "area/sources",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/deps",
+      "area/vcs",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/deps",
+      "kind/enhancement",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/error-handling",
+      "area/sources",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/error-handling",
+      "area/ux",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "area/error-handling",
+      "kind/enhancement",
+      {
+        "weight": 5
+      }
+    ],
+    [
+      "area/error-handling",
+      "area/cli",
+      {
+        "weight": 7
+      }
+    ],
+    [
+      "area/error-handling",
+      "area/init",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/error-handling",
+      "area/installer",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/cli",
+      "status/confirmed",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "area/cli",
+      "area/sources",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/cli",
+      "area/ux",
+      {
+        "weight": 18
+      }
+    ],
+    [
+      "area/cli",
+      "area/pyproject",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/cli",
+      "area/init",
+      {
+        "weight": 7
+      }
+    ],
+    [
+      "area/cli",
+      "kind/enhancement",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/cli",
+      "status/accepted",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/cli",
+      "impact/deprecation",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/cli",
+      "area/plugin-api",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/cli",
+      "area/publishing",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "area/cli",
+      "status/waiting-on-response",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/cli",
+      "area/windows",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/cli",
+      "area/show",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "area/cli",
+      "status/external-issue",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/cli",
+      "version/1.2.1",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/cli",
+      "area/installer",
+      {
+        "weight": 6
+      }
+    ],
+    [
+      "area/installer",
+      "area/sources",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "area/installer",
+      "status/waiting-on-response",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/installer",
+      "area/vcs",
+      {
+        "weight": 6
+      }
+    ],
+    [
+      "area/installer",
+      "area/project/deps",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/installer",
+      "area/windows",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "area/installer",
+      "status/waiting-on-core",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/installer",
+      "status/external-issue",
+      {
+        "weight": 9
+      }
+    ],
+    [
+      "area/installer",
+      "status/confirmed",
+      {
+        "weight": 6
+      }
+    ],
+    [
+      "area/installer",
+      "version/1.3.1",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/installer",
+      "status/needs-reproduction",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "area/installer",
+      "good first issue",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/installer",
+      "version/1.2.1",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/installer",
+      "version/1.2.0",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/installer",
+      "kind/question",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/installer",
+      "kind/enhancement",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/testing",
+      "good first issue",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/confirmed",
+      "area/pyproject",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/confirmed",
+      "area/shell",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/confirmed",
+      "version/1.3.1",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/confirmed",
+      "status/external-issue",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/confirmed",
+      "area/vcs",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "status/confirmed",
+      "version/1.2.2",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "status/confirmed",
+      "kind/enhancement",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/confirmed",
+      "good first issue",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "status/confirmed",
+      "version/1.2.1",
+      {
+        "weight": 9
+      }
+    ],
+    [
+      "status/confirmed",
+      "area/sources",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/confirmed",
+      "area/plugin-api",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/confirmed",
+      "version/1.2.0",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/confirmed",
+      "area/ux",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/confirmed",
+      "area/windows",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/confirmed",
+      "status/wontfix",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/confirmed",
+      "area/scripts",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/confirmed",
+      "area/show",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/pyproject",
+      "area/peps",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/pyproject",
+      "status/accepted",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/pyproject",
+      "good first issue",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/pyproject",
+      "version/1.2.1",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/pyproject",
+      "kind/enhancement",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/wontfix",
+      "area/ux",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/wontfix",
+      "area/windows",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/wontfix",
+      "kind/question",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/wontfix",
+      "area/sources",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/wontfix",
+      "area/publishing",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/wontfix",
+      "status/external-issue",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/sources",
+      "area/vcs",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/sources",
+      "area/auth",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/sources",
+      "kind/enhancement",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/sources",
+      "good first issue",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/sources",
+      "version/1.2.1",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/sources",
+      "kind/question",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/sources",
+      "status/invalid",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/sources",
+      "status/external-issue",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/sources",
+      "area/ux",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/sources",
+      "status/needs-reproduction",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/external-issue",
+      "area/project/deps",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/external-issue",
+      "area/auth",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/external-issue",
+      "kind/question",
+      {
+        "weight": 18
+      }
+    ],
+    [
+      "status/external-issue",
+      "area/docs/faq",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/external-issue",
+      "version/1.3.1",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/external-issue",
+      "status/needs-reproduction",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "status/external-issue",
+      "area/vcs",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/external-issue",
+      "version/1.2.1",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/external-issue",
+      "version/1.2.0",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/external-issue",
+      "status/invalid",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/external-issue",
+      "area/ux",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/external-issue",
+      "area/publishing",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "good first issue",
+      "status/accepted",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "good first issue",
+      "kind/refactor",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "good first issue",
+      "area/vcs",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "good first issue",
+      "kind/enhancement",
+      {
+        "weight": 6
+      }
+    ],
+    [
+      "good first issue",
+      "version/1.2.1",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "good first issue",
+      "area/ux",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "good first issue",
+      "area/publishing",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "good first issue",
+      "area/project",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "good first issue",
+      "area/ci",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/project/deps",
+      "kind/enhancement",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/accepted",
+      "area/peps",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/accepted",
+      "area/ux",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/accepted",
+      "impact/deprecation",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/auth",
+      "area/publishing",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/auth",
+      "area/repo",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/auth",
+      "area/windows",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/peps",
+      "kind/question",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/peps",
+      "status/needs-reproduction",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/ux",
+      "area/show",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "area/ux",
+      "area/init",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/ux",
+      "impact/deprecation",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/ux",
+      "kind/enhancement",
+      {
+        "weight": 4
+      }
+    ],
+    [
+      "area/ux",
+      "area/vcs",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/ux",
+      "area/publishing",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/ux",
+      "area/repo",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/show",
+      "status/needs-consensus",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/show",
+      "version/1.2.1",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/needs-reproduction",
+      "status/waiting-on-response",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/needs-reproduction",
+      "kind/question",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "status/needs-reproduction",
+      "area/vcs",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/needs-reproduction",
+      "area/windows",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "status/needs-reproduction",
+      "area/repo",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/enhancement",
+      "version/1.2.1",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "kind/enhancement",
+      "area/plugin-api",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/enhancement",
+      "area/ci",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/enhancement",
+      "area/docs/faq",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/enhancement",
+      "area/vcs",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/plugin-api",
+      "area/windows",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/plugin-api",
+      "version/1.2.0",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/plugin-api",
+      "kind/question",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/publishing",
+      "kind/question",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/publishing",
+      "version/1.2.1",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/shell",
+      "version/1.3.1",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/shell",
+      "version/1.2.0",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/python",
+      "area/init",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/vcs",
+      "area/windows",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/vcs",
+      "status/needs-attention",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/vcs",
+      "version/1.2.2",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/vcs",
+      "kind/question",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "area/repo",
+      "status/waiting-on-response",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/waiting-on-response",
+      "kind/question",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "status/waiting-on-response",
+      "area/windows",
+      {
+        "weight": 2
+      }
+    ],
+    [
+      "area/windows",
+      "kind/question",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/question",
+      "area/project",
+      {
+        "weight": 1
+      }
+    ],
+    [
+      "kind/question",
+      "area/docs/faq",
+      {
+        "weight": 13
+      }
+    ],
+    [
+      "kind/question",
+      "status/invalid",
+      {
+        "weight": 3
+      }
+    ],
+    [
+      "kind/question",
+      "version/1.2.1",
+      {
+        "weight": 1
+      }
+    ]
+  ]
+}

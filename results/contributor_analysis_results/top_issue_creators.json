@@ -1,0 +1,66 @@
+{
+  "top_creators": [
+    {
+      "name": "ghost",
+      "count": 71
+    },
+    {
+      "name": "abn",
+      "count": 49
+    },
+    {
+      "name": "KotlinIsland",
+      "count": 34
+    },
+    {
+      "name": "dimaqq",
+      "count": 26
+    },
+    {
+      "name": "cjw296",
+      "count": 26
+    },
+    {
+      "name": "rominf",
+      "count": 20
+    },
+    {
+      "name": "sdispater",
+      "count": 18
+    },
+    {
+      "name": "dazza-codes",
+      "count": 17
+    },
+    {
+      "name": "buriy",
+      "count": 17
+    },
+    {
+      "name": "johnthagen",
+      "count": 15
+    },
+    {
+      "name": "radoering",
+      "count": 14
+    },
+    {
+      "name": "dimbleby",
+      "count": 14
+    },
+    {
+      "name": "seansfkelley",
+      "count": 14
+    },
+    {
+      "name": "sobolevn",
+      "count": 14
+    },
+    {
+      "name": "jgirardet",
+      "count": 13
+    }
+  ],
+  "total_issues": 6139,
+  "unique_creators": 3981
+}

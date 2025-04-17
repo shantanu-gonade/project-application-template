@@ -14,7 +14,7 @@ This script requires a GitHub personal access token with the 'repo' scope.
 REPO_OWNER = "python-poetry"
 REPO_NAME = "poetry"
 PER_PAGE = 100  # Maximum allowed by GitHub API
-OUTPUT_FILE = "poetry_data.json"
+OUTPUT_FILE = "data/poetry_data.json"
 
 # GitHub API endpoints
 ISSUES_URL = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/issues"
