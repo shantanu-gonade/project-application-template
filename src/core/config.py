@@ -126,7 +126,7 @@ def set_parameter(name, value):
     if isinstance(value, str):
         os.environ[name] = value
     else:
-        os.environ[name] = "json:{0}".format(json.dumps(value))
+        os.environ[name] = "json:{0}".format(json.dumps(value, separators=None))
 
 
 def overwrite_from_args(args):

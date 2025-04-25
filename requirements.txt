@@ -5,3 +5,6 @@ ijson
 networkx
 scikit-learn
 seaborn
+pytest
+pytest-cov
+pytest-mock

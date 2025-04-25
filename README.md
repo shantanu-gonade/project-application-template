@@ -67,8 +67,14 @@ github-issue-analysis/
 │   │   └── report.py         # Report generation utilities
 │   └── utils/
 │       └── helpers.py        # Common utility functions
+├── tests/                    # Unit tests
+│   ├── core/                 # Tests for core modules
+│   ├── analysis/             # Tests for analysis modules
+│   ├── utils/                # Tests for utility modules
+│   └── visualization/        # Tests for visualization modules
 ├── results/                  # Directory for analysis results
 ├── run.py                    # Main entry point
+├── run_tests.py              # Script to run tests and generate coverage reports
 ├── config.json               # Configuration file
 └── requirements.txt          # Dependencies
 ```
@@ -169,6 +175,69 @@ Each analysis generates both textual output to the console and visual charts usi
 - JSON data files
 - Visualizations (`.png` files)
 
+## Running Tests
+
+The project includes a comprehensive test suite using pytest. There are two ways to run the tests:
+
+### Using pytest directly
+
+To run the tests using pytest directly:
+
+```
+pytest
+```
+
+To run tests with verbose output:
+
+```
+pytest -v
+```
+
+To run tests for a specific module:
+
+```
+pytest tests/core/test_model.py
+```
+
+To generate a test coverage report:
+
+```
+pytest --cov=src tests/
+```
+
+For a more detailed HTML coverage report:
+
+```
+pytest --cov=src --cov-report=html tests/
+```
+
+### Using the run_tests.py script
+
+The project includes a convenient script for running tests and generating coverage reports:
+
+```
+python run_tests.py
+```
+
+Options:
+
+- `--html`: Generate HTML coverage report
+- `--xml`: Generate XML coverage report
+- `--verbose` or `-v`: Run tests with verbose output
+- `--module` or `-m`: Run tests for a specific module (e.g., `core/test_model.py`)
+
+Examples:
+
+```
+# Run all tests with verbose output and generate HTML coverage report
+python run_tests.py --verbose --html
+
+# Run tests for a specific module
+python run_tests.py --module core/test_model.py
+```
+
+The HTML coverage report will be created in the `htmlcov` directory, which you can open in a web browser to see detailed coverage information.
+
 ## Extending the Application
 
 To add a new analysis:
@@ -177,3 +246,4 @@ To add a new analysis:
 2. Implement the required methods: `analyze()`, `visualize()`, and `save_results()`
 3. Add the new analysis to the `run.py` file
 4. Update the README.md with information about the new analysis
+5. Add unit tests for the new analysis in the `tests/analysis/` directory

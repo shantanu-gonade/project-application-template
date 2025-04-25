@@ -1,0 +1,37 @@
+{
+  "ghost": {
+    "kind/bug": 28,
+    "status/triage": 8,
+    "area/docs": 6,
+    "kind/feature": 5,
+    "kind/question": 4
+  },
+  "abn": {
+    "kind/bug": 15,
+    "kind/feature": 11,
+    "kind/enhancement": 8,
+    "status/triage": 6,
+    "good first issue": 4
+  },
+  "KotlinIsland": {
+    "kind/bug": 14,
+    "status/triage": 14,
+    "kind/feature": 12,
+    "area/docs": 5,
+    "area/show": 3
+  },
+  "dimaqq": {
+    "kind/bug": 6,
+    "kind/feature": 3,
+    "status/duplicate": 2,
+    "status/triage": 1,
+    "area/core": 1
+  },
+  "cjw296": {
+    "kind/bug": 7,
+    "kind/feature": 3,
+    "area/publishing": 2,
+    "area/solver": 2,
+    "area/venv": 1
+  }
+}

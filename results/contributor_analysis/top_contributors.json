@@ -1,0 +1,38 @@
+{
+  "top_issue_creators": {
+    "ghost": 71,
+    "abn": 49,
+    "KotlinIsland": 34,
+    "dimaqq": 26,
+    "cjw296": 26,
+    "rominf": 20,
+    "sdispater": 18,
+    "dazza-codes": 17,
+    "buriy": 17,
+    "johnthagen": 15
+  },
+  "top_commenters": {
+    "github-actions[bot]": 5547,
+    "dimbleby": 3317,
+    "finswimmer": 1663,
+    "abn": 1393,
+    "neersighted": 1354,
+    "sdispater": 973,
+    "sinoroc": 549,
+    "Secrus": 544,
+    "radoering": 509,
+    "stale[bot]": 484
+  },
+  "top_issue_closers": {
+    "finswimmer": 1162,
+    "neersighted": 787,
+    "abn": 530,
+    "sdispater": 528,
+    "radoering": 420,
+    "Secrus": 396,
+    "stale[bot]": 173,
+    "mkniewallner": 84,
+    "kasteph": 60,
+    "ralbertazzi": 26
+  }
+}
