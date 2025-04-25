@@ -1,0 +1,22 @@
+{
+  "ghost": {
+    "avg_time": 132.7145625,
+    "issue_count": 70
+  },
+  "abn": {
+    "avg_time": 316.53230776972623,
+    "issue_count": 46
+  },
+  "KotlinIsland": {
+    "avg_time": 112.92020459976105,
+    "issue_count": 31
+  },
+  "dimaqq": {
+    "avg_time": 49.02432158119658,
+    "issue_count": 26
+  },
+  "cjw296": {
+    "avg_time": 40.469784544159545,
+    "issue_count": 26
+  }
+}

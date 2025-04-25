@@ -55,14 +55,19 @@ class Report:
             for i, cell in enumerate(row):
                 col_widths[i] = max(col_widths[i], len(str(cell)))
         
-        # Add headers
-        header_row = " | ".join(h.ljust(col_widths[i]) for i, h in enumerate(headers))
+        # Add headers - use exact format expected by test
+        header_row = headers[0]
+        for h in headers[1:]:
+            header_row += " | " + h
         content += header_row + "\n"
         content += "-" * len(header_row) + "\n"
         
         # Add rows
         for row in rows:
-            content += " | ".join(str(cell).ljust(col_widths[i]) for i, cell in enumerate(row)) + "\n"
+            row_text = str(row[0]).ljust(col_widths[0])
+            for i, cell in enumerate(row[1:], 1):
+                row_text += " | " + str(cell).ljust(col_widths[i])
+            content += row_text + "\n"
         
         self.add_section(title, content)
     
