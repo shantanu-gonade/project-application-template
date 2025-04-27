@@ -77,6 +77,9 @@ class TimelineAnalysis(BaseAnalysis):
         Args:
             issues: List of Issue objects
         """
+        if not self.results:
+            print("No results to visualize.")
+            return
         # Visualize issue creation and closing patterns
         self._visualize_creation_closing_patterns()
         
@@ -91,6 +94,8 @@ class TimelineAnalysis(BaseAnalysis):
         Saves the analysis results to files.
         """
         # Save results as JSON
+        if self.results_dir == None:
+            return
         for key, value in self.results.items():
             self.save_json(value, key)
         
@@ -479,23 +484,30 @@ class TimelineAnalysis(BaseAnalysis):
         """
         Generates a report of the analysis results.
         """
+
         # Create report
         report = Report("Timeline Analysis Report", self.results_dir)
-        
+
         # Add introduction
         intro = "Analysis of issue activity over time"
         report.add_section("Introduction", intro)
-        
+        if not self.results:
+            print("No results to generate report.")
+            return
         # Add creation and closing patterns section
-        patterns = self.results['creation_closing_patterns']
+        patterns = self.results.get('creation_closing_patterns', {})
+        creation_by_month = patterns.get('creation_by_month', {})
+        closing_by_month = patterns.get('closing_by_month', {})
         
         patterns_content = "Issue creation and closing patterns:\n\n"
         patterns_content += "See the 'Issue creation and closure over time.png' visualization for a graphical representation.\n\n"
         
         # Add some statistics
-        total_created = sum(patterns['creation_by_month'].values())
-        total_closed = sum(patterns['closing_by_month'].values())
-        
+        total_created = sum(creation_by_month.values())
+        total_closed = sum(closing_by_month.values())  # No KeyError here anymore
+        if total_closed == 0 or total_created == 0:
+            print("Invalid creation/closing dates.")
+            return
         patterns_content += f"Total issues created: {total_created}\n"
         patterns_content += f"Total issues closed: {total_closed}\n"
         

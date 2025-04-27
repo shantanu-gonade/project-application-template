@@ -1,5 +1,6 @@
 """
 Tests for the timeline analysis module.
+
 """
 
 import os
@@ -396,6 +397,129 @@ def test_visualize_issue_lifecycle_no_data(monkeypatch):
     
     # Check that save_figure was called once (for the combined visualization)
     assert analysis.save_figure.call_count == 0
+
+def test_analyze_empty_issues(sample_issues, monkeypatch):
+    """
+    Test the analyze method with an empty issue list.
+    """
+    analysis = TimelineAnalysis()
+    
+    # Mock the helper methods
+    analysis._analyze_creation_closing_patterns = MagicMock(return_value={})
+    analysis._analyze_issue_lifecycle = MagicMock(return_value={})
+    analysis._analyze_activity_trends = MagicMock(return_value={})
+    
+    # Run the analysis
+    results = analysis.analyze([])  # Empty list of issues
+    
+    # Check that the helper methods were called
+    analysis._analyze_creation_closing_patterns.assert_called_once_with([])
+    analysis._analyze_issue_lifecycle.assert_called_once_with([])
+    analysis._analyze_activity_trends.assert_called_once_with([])
+    
+    # Ensure the results are empty
+    assert results == {
+        'creation_closing_patterns': {},
+        'issue_lifecycle': {},
+        'activity_trends': {}
+    }
+
+
+
+def test_analyze_issue_lifecycle_missing_data(sample_issues, monkeypatch):
+    """
+    Test the _analyze_issue_lifecycle method with missing first response and resolution times.
+    """
+    analysis = TimelineAnalysis()
+    
+    # Mock helper functions for missing data
+    def mock_get_issue_first_response_time(issue):
+        return None  # No response time for this issue
+    
+    def mock_get_issue_resolution_time(issue):
+        return None  # No resolution time for this issue
+    
+    monkeypatch.setattr("src.analysis.timeline_analysis.get_issue_first_response_time", mock_get_issue_first_response_time)
+    monkeypatch.setattr("src.analysis.timeline_analysis.get_issue_resolution_time", mock_get_issue_resolution_time)
+    
+    # Run the analysis
+    results = analysis._analyze_issue_lifecycle(sample_issues)
+    
+    # Check that the lists contain None for missing data
+    assert all(x is None for x in results['first_response_times'])
+    assert all(x is None for x in results['resolution_times'])
+    
+    # Check averages and medians for missing data
+    assert results['avg_first_response'] is None
+    assert results['avg_resolution'] is None
+
+def test_visualize_empty_results(sample_issues, monkeypatch):
+    """
+    Test the visualize method when results are empty.
+    """
+    analysis = TimelineAnalysis()
+    
+    # Set empty results
+    analysis.results = {}
+    
+    # Mock the visualization helper methods
+    analysis._visualize_creation_closing_patterns = MagicMock()
+    analysis._visualize_issue_lifecycle = MagicMock()
+    analysis._visualize_activity_trends = MagicMock()
+    
+    # Run the visualization
+    analysis.visualize([])
+    
+    # Check that the helper methods were not called
+    analysis._visualize_creation_closing_patterns.assert_not_called()
+    analysis._visualize_issue_lifecycle.assert_not_called()
+    analysis._visualize_activity_trends.assert_not_called()
+def test_save_results_no_directory(sample_issues, monkeypatch):
+    """
+    Test the save_results method when results_dir is not set.
+    """
+    analysis = TimelineAnalysis()
+    
+    # Set up the results
+    analysis.results = {
+        'creation_closing_patterns': {'creation_by_month': {'2023-01': 2}},
+        'issue_lifecycle': {'avg_first_response': 1.5},
+        'activity_trends': {'day_of_week': {'counts': [1, 2, 3]}}
+    }
+    
+    # Set results_dir to None
+    analysis.results_dir = None
+    
+    # Mock the save_json method
+    analysis.save_json = MagicMock()
+    
+    # Run save_results and expect no error
+    analysis.save_results()
+    
+    # Ensure save_json was not called
+    analysis.save_json.assert_not_called()
+
+def test_generate_report_no_results(sample_issues, monkeypatch):
+    """
+    Test the _generate_report method with no results.
+    """
+    analysis = TimelineAnalysis()
+
+    # Set empty results
+    analysis.results = {}
+
+    # Mock the Report class
+    mock_report = MagicMock()
+    mock_report_class = MagicMock(return_value=mock_report)
+    monkeypatch.setattr("src.analysis.timeline_analysis.Report", mock_report_class)
+
+    # Run the _generate_report method
+    analysis._generate_report()
+
+    # Check that the Report class was called
+    mock_report_class.assert_called_once()  # Ensure the report was instantiated
+    mock_report.add_section.assert_called()  # Ensure that sections were added to the report
+
 
 def test_visualize_activity_trends(monkeypatch):
     """
