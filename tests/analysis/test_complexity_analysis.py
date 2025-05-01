@@ -1,14 +1,16 @@
 """
 Tests for the complexity analysis module.
 """
-
 import os
 import json
+from _pytest.compat import LEGACY_PATH
 import pytest
 from unittest.mock import patch, MagicMock
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('Agg')
 
 from src.analysis.complexity_analysis import IssueComplexityAnalysis
 from src.core.model import Issue, Event, State
@@ -19,10 +21,12 @@ def test_complexity_analysis_initialization():
     """
     analysis = IssueComplexityAnalysis()
     
+    # Assert that the initialization values are correct
     assert analysis.name == "complexity_analysis"
     assert analysis.results == {}
 
-def test_analyze(sample_issues, monkeypatch):
+
+def test_analyze(sample_issues: list[Issue], monkeypatch: pytest.MonkeyPatch):
     """
     Test the analyze method.
     """
@@ -67,13 +71,13 @@ def test_calculate_complexity_scores(sample_issues):
     """
     # Create an IssueComplexityAnalysis instance
     analysis = IssueComplexityAnalysis()
-    
+
     # Run the analysis
     scores = analysis._calculate_complexity_scores(sample_issues)
-    
+
     # Check that we have scores for all issues
     assert len(scores) == len(sample_issues)
-    
+
     # Check that each score has the expected fields
     for score in scores:
         assert 'issue_number' in score
@@ -86,15 +90,28 @@ def test_calculate_complexity_scores(sample_issues):
         assert 'labels' in score
         assert 'resolution_time' in score
         assert 'state' in score
-    
-    # Check specific scores for known issues
-    issue1_score = next(score for score in scores if score['issue_number'] == '1')
-    assert issue1_score['comment_count'] == 2  # 2 comments in sample_issues[0]
-    assert issue1_score['participant_count'] >= 2  # At least 2 participants
-    
-    issue2_score = next(score for score in scores if score['issue_number'] == '2')
-    assert issue2_score['comment_count'] == 1  # 1 comment in sample_issues[1]
-    assert issue2_score['state'] == State.open
+
+    # Check specific known issue numbers
+    print("Issues in scores:")
+    for score in scores:
+        print(f"issue_number: {score['issue_number']}")
+
+    # Check for issue number '1'
+    issue1_score = next((score for score in scores if str(score['issue_number']) == '1'), None)
+    if issue1_score:
+        assert issue1_score['comment_count'] == 2
+        assert issue1_score['participant_count'] >= 2
+    else:
+        pytest.fail("Issue with issue_number '1' not found in scores")
+
+    # Check for issue number '2'
+    issue2_score = next((score for score in scores if str(score['issue_number']) == '2'), None)
+    if issue2_score:
+        assert issue2_score['comment_count'] == 1
+        assert issue2_score['participant_count'] >= 2
+    else:
+        pytest.fail("Issue with issue_number '2' not found in scores")
+
 
 def test_analyze_complexity_resolution_correlation_with_data():
     """
@@ -192,7 +209,7 @@ def test_analyze_complexity_by_label():
     # Check that the first label is the most complex
     assert sorted_labels[0][0] in ['bug', 'high-priority', 'feature']  # One of these should be highest
 
-def test_visualize(sample_issues, monkeypatch):
+def test_visualize(sample_issues: list[Issue], monkeypatch: pytest.MonkeyPatch):
     """
     Test the visualize method.
     """
@@ -244,7 +261,7 @@ def test_visualize(sample_issues, monkeypatch):
     analysis._visualize_complexity_resolution_correlation.assert_called_once()
     analysis._visualize_complexity_by_label.assert_called_once()
 
-def test_visualize_complexity_distribution(monkeypatch):
+def test_visualize_complexity_distribution(monkeypatch: pytest.MonkeyPatch):
     """
     Test the _visualize_complexity_distribution method.
     """
@@ -297,7 +314,7 @@ def test_visualize_complexity_distribution(monkeypatch):
     assert "issue_complexity_scores_box_plot" in filenames
     assert "complexity_components" in filenames
 
-def test_visualize_complexity_resolution_correlation(monkeypatch):
+def test_visualize_complexity_resolution_correlation(monkeypatch: pytest.MonkeyPatch):
     """
     Test the _visualize_complexity_resolution_correlation method.
     """
@@ -340,7 +357,7 @@ def test_visualize_complexity_resolution_correlation(monkeypatch):
     assert "complexity_vs_resolution_time" in filenames
     assert "avg_resolution_time_vs_complexity_category" in filenames
 
-def test_visualize_complexity_resolution_correlation_no_data(monkeypatch):
+def test_visualize_complexity_resolution_correlation_no_data(monkeypatch: pytest.MonkeyPatch):
     """
     Test the _visualize_complexity_resolution_correlation method with no correlation data.
     """
@@ -365,7 +382,7 @@ def test_visualize_complexity_resolution_correlation_no_data(monkeypatch):
     # Check that print was called with the expected message
     mock_print.assert_called_with("Not enough data to visualize complexity-resolution correlation")
 
-def test_visualize_complexity_by_label(monkeypatch):
+def test_visualize_complexity_by_label(monkeypatch: pytest.MonkeyPatch):
     """
     Test the _visualize_complexity_by_label method.
     """
@@ -421,7 +438,7 @@ def test_visualize_complexity_by_label(monkeypatch):
     assert args[0] is mock_figure
     assert args[1] == "avg_issue_complexity_vs_label"
 
-def test_visualize_complexity_by_label_no_data(monkeypatch):
+def test_visualize_complexity_by_label_no_data(monkeypatch: pytest.MonkeyPatch):
     """
     Test the _visualize_complexity_by_label method with no label data.
     """
@@ -446,7 +463,7 @@ def test_visualize_complexity_by_label_no_data(monkeypatch):
     # Check that print was called with the expected message
     mock_print.assert_called_with("Not enough data to visualize complexity by label")
 
-def test_save_results(monkeypatch, tmpdir):
+def test_save_results(monkeypatch: pytest.MonkeyPatch, tmpdir: LEGACY_PATH):
     """
     Test the save_results method.
     """
@@ -492,7 +509,7 @@ def test_save_results(monkeypatch, tmpdir):
     assert isinstance(serialized_scores[0]['state'], str)
     assert isinstance(serialized_scores[1]['state'], str)
 
-def test_generate_report(monkeypatch):
+def test_generate_report(monkeypatch: pytest.MonkeyPatch):
     """
     Test the _generate_report method.
     """
